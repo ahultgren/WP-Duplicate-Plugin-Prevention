@@ -1,4 +1,4 @@
-#WP Prevent Duplicate Plugins
+#WP Duplicate Plugin Prevention
 
 Removes a plugin from the list of available plugins if it's already installed. 
 This code is supposed to be copied and placed in the main file of your own plugin. 
