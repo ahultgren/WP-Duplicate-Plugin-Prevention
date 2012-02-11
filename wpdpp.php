@@ -17,7 +17,7 @@ add_filter( 'all_plugins', function ( $plugins ){
 	
 	// Loop through all plugins and remove those that have the same name but not the same directory AND is not installed
 	foreach( $plugins as $plugin => $data ){
-		if( $plugin . '' !== $plugin_dir && $data['Title'] . '' === $plugin_name /* && !is_plugin_active($plugin) */ ){
+		if( $plugin . '' !== $plugin_dir && $data['Title'] . '' === $plugin_name && !is_plugin_active($plugin) ){
 			unset($plugins[$plugin]);
 		}
 	}
